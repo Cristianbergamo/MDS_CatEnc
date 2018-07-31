@@ -203,7 +203,7 @@ class encoder():
 if __name__ == '__main__':
 
     file_name = 'heroes_information.csv'
-    df = pd.read_csv(file_name, sep=';')
+    df = pd.read_csv(file_name, sep=',')
     cont_col = ['Height', 'Weight']
     df[cont_col] = df[cont_col].fillna(-99)
     mm = MinMaxScaler()
